@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://unpkg.com/react@16.13.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.13.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone@7.9.3/babel.js"></script>
+    <script type="text/babel">
+      const root = document.createElement('div');
+      root.id = 'root';
+      document.body.append(root);
+
+      const inputStyle = {
+        padding: '10px',
+        color: 'blue',
+      };
+      const spanStyle = {
+        color: 'red',
+        display: 'block',
+        fontWeight: 'bold',
+        fontSize: '24px',
+      };
+
+      const span = <span style={spanStyle}>Hello world</span>;
+      const input = (
+        <input placeholder="Your name" type="text" style={inputStyle} />
+      );
+      const reactElement = (
+        <div style={{ textAlign: 'center' }}>
+          {span}
+          {input}
+        </div>
+      );
+
+      ReactDOM.render(reactElement, root);
+    </script>
+  </body>
+</html>
