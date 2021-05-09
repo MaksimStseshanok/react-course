@@ -1,0 +1,15 @@
+input {
+  display: block;
+  padding: 10px;
+}
+
+button {
+  margin: 15px;
+}
+
+.on {
+  color: red;
+}
+.off {
+  color: black;
+}
