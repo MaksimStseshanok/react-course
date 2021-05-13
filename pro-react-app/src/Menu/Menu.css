@@ -1,0 +1,13 @@
+ul {
+  margin: 0;
+  list-style: none;
+  padding-left: 20px;
+}
+
+.submenu {
+  display: none;
+}
+
+.submenu.open {
+  display: block;
+}
